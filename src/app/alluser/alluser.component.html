@@ -1,0 +1,55 @@
+
+<h1 style="text-align:center ;"><b><ins>ALL USERS LIST</ins></b></h1>
+<table class="content-table" style="width:100% ; text-align:center;margin-top: 1cm;">
+    <thead>
+    <tr>
+        <th>Sl no</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Maiden Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Phone</th>
+        
+        
+        <th>Birth Date</th>
+        
+        <th>Bloodgroup</th>
+       <th>Action</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let user of userList;let i=index">
+
+
+
+        <td>{{i+1}}</td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.maidenName}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        
+        <td>{{user.birthDate}}</td>
+       
+        <td>{{user.bloodGroup}}</td>
+        
+
+        <td>
+            <button class="btn btn-warning"> View</button>
+             <br>
+            <button class="btn btn-success">Edit</button>
+      <br>
+            <button  class="btn btn-danger">Delete</button>
+        </td>
+
+
+</tbody>
+    
+    
+   
+</table>
